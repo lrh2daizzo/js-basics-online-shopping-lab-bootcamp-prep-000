@@ -9,13 +9,18 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(item) {
- // write your code here
+function addToCart(itemName){
+  var itemPrice = Math.floor(Math.random() * 101) + 1;
+  var object = { [`${itemName}`]:itemPrice};
+  cart.push(object);
+  console.log(`${itemName} has been added to your cart.`);
+  return cart;
 }
 
 function viewCart() {
-  // write your code here
-}
+
+  }
+
 
 function total() {
   // write your code here
